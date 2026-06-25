@@ -22,6 +22,28 @@
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 
+<!-- ambient floating snow (site-wide) -->
+<div class="snow" aria-hidden="true">
+  <span class="flake" style="--left:5%;--size:8px;--dur:26s;--delay:-2s;--sway:30px;--o:.5"></span>
+  <span class="flake" style="--left:12%;--size:14px;--dur:32s;--delay:-10s;--sway:-40px;--o:.35"></span>
+  <span class="flake" style="--left:20%;--size:6px;--dur:20s;--delay:-5s;--sway:24px;--o:.6"></span>
+  <span class="flake" style="--left:28%;--size:18px;--dur:38s;--delay:-18s;--sway:50px;--o:.3"></span>
+  <span class="flake" style="--left:35%;--size:10px;--dur:24s;--delay:-8s;--sway:-30px;--o:.5"></span>
+  <span class="flake" style="--left:43%;--size:7px;--dur:29s;--delay:-14s;--sway:36px;--o:.55"></span>
+  <span class="flake" style="--left:50%;--size:22px;--dur:42s;--delay:-3s;--sway:-55px;--o:.25"></span>
+  <span class="flake" style="--left:57%;--size:9px;--dur:23s;--delay:-12s;--sway:28px;--o:.5"></span>
+  <span class="flake" style="--left:64%;--size:13px;--dur:34s;--delay:-7s;--sway:-42px;--o:.35"></span>
+  <span class="flake" style="--left:71%;--size:6px;--dur:21s;--delay:-16s;--sway:22px;--o:.6"></span>
+  <span class="flake" style="--left:78%;--size:16px;--dur:36s;--delay:-4s;--sway:48px;--o:.3"></span>
+  <span class="flake" style="--left:85%;--size:9px;--dur:27s;--delay:-11s;--sway:-32px;--o:.5"></span>
+  <span class="flake" style="--left:92%;--size:12px;--dur:31s;--delay:-6s;--sway:38px;--o:.4"></span>
+  <span class="flake" style="--left:16%;--size:5px;--dur:19s;--delay:-9s;--sway:-20px;--o:.6"></span>
+  <span class="flake" style="--left:40%;--size:20px;--dur:40s;--delay:-22s;--sway:52px;--o:.22"></span>
+  <span class="flake" style="--left:68%;--size:7px;--dur:25s;--delay:-15s;--sway:-26px;--o:.55"></span>
+  <span class="flake" style="--left:88%;--size:6px;--dur:22s;--delay:-1s;--sway:24px;--o:.6"></span>
+  <span class="flake" style="--left:48%;--size:11px;--dur:33s;--delay:-19s;--sway:-44px;--o:.35"></span>
+</div>
+
 <!-- NAV -->
 <header class="nav" id="nav">
   <div class="container nav__inner">
@@ -45,13 +67,6 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <div class="hero__bg" aria-hidden="true">
-    <span class="bokeh bokeh--1"></span>
-    <span class="bokeh bokeh--2"></span>
-    <span class="bokeh bokeh--3"></span>
-    <span class="bokeh bokeh--4"></span>
-  </div>
-
   <div class="container hero__grid">
     <!-- LEFT: cake slider -->
     <div class="hero__visual">
