@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+node_modules/
+*.log
+.netlify/
+
+# build/helper artifacts
+contact_sheet.png
+cs_a.png
+cs_b.png
+site/
+images/
