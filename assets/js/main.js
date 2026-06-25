@@ -86,4 +86,27 @@
     else if (e.key === "ArrowRight") show(current + 1);
     else if (e.key === "ArrowLeft") show(current - 1);
   });
+
+  // Hero cake slider
+  var cakes = $$(".hero__stage .cake");
+  var dots = $$(".hdot");
+  var capTitle = $("#capTitle");
+  var capSub = $("#capSub");
+  if (cakes.length && dots.length) {
+    var hi = 0, timer;
+    var setHero = function (i) {
+      hi = (i + cakes.length) % cakes.length;
+      cakes.forEach(function (c, k) { c.classList.toggle("is-active", k === hi); });
+      dots.forEach(function (d, k) { d.classList.toggle("is-active", k === hi); });
+      var active = cakes[hi];
+      if (capTitle) capTitle.textContent = active.getAttribute("data-title") || "";
+      if (capSub) capSub.textContent = active.getAttribute("data-sub") || "";
+    };
+    var startAuto = function () { timer = setInterval(function () { setHero(hi + 1); }, 5000); };
+    var stopAuto = function () { clearInterval(timer); };
+    dots.forEach(function (d) {
+      d.addEventListener("click", function () { stopAuto(); setHero(+d.getAttribute("data-i")); startAuto(); });
+    });
+    startAuto();
+  }
 })();

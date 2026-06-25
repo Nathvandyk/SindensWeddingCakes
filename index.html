@@ -45,27 +45,66 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="hero__bg" aria-hidden="true">
+    <span class="bokeh bokeh--1"></span>
+    <span class="bokeh bokeh--2"></span>
+    <span class="bokeh bokeh--3"></span>
+    <span class="bokeh bokeh--4"></span>
+  </div>
+
   <div class="container hero__grid">
-    <div class="hero__copy reveal">
-      <p class="eyebrow">Vanderbijlpark · Vaal Triangle · Gauteng</p>
-      <h1 class="display">Luxury Wedding Cakes <span class="byline">by Bev</span></h1>
-      <p class="hero__lead">Beautiful, luxurious and one&#8209;of&#8209;a&#8209;kind wedding cakes, hand-crafted to make your celebration unforgettable.</p>
-      <div class="hero__actions">
-        <a href="#gallery" class="btn btn--gold">View the Gallery</a>
-        <a href="https://wa.me/27832852515" target="_blank" rel="noopener" class="btn btn--ghost">Enquire on WhatsApp</a>
+    <!-- LEFT: cake slider -->
+    <div class="hero__visual">
+      <div class="hero__dots" role="tablist" aria-label="Featured cakes">
+        <button class="hdot is-active" data-i="0" aria-label="Cake 1">01</button>
+        <button class="hdot" data-i="1" aria-label="Cake 2">02</button>
+        <button class="hdot" data-i="2" aria-label="Cake 3">03</button>
       </div>
-      <ul class="hero__chips">
-        <li>One-of-a-kind designs</li>
-        <li>Hand-crafted with love</li>
-        <li>Fresh florals &amp; fine detail</li>
-      </ul>
+      <div class="hero__stage">
+        <img class="cake is-active" src="assets/img/g15.jpg" alt="Tall wedding cake with cascading florals and candlelight"
+             data-title="Cascading Florals" data-sub="Signature wedding cake" />
+        <img class="cake" src="assets/img/g28.jpg" alt="White wedding cake with deep burgundy roses"
+             data-title="Burgundy Roses" data-sub="Timeless &amp; elegant" />
+        <img class="cake" src="assets/img/g23.jpg" alt="White wedding cake with soft blush florals"
+             data-title="Blush Blooms" data-sub="Soft &amp; romantic" />
+      </div>
+      <div class="hero__caption">
+        <div>
+          <strong id="capTitle">Cascading Florals</strong>
+          <span id="capSub">Signature wedding cake</span>
+        </div>
+        <a href="#gallery" class="caplink">View&nbsp;details &rsaquo;</a>
+      </div>
     </div>
-    <div class="hero__media reveal">
-      <div class="hero__frame">
-        <img src="assets/img/hero.jpg" alt="An elegant multi-tier wedding cake decorated with florals" />
+
+    <!-- RIGHT: headline + content -->
+    <div class="hero__content">
+      <p class="eyebrow">Vanderbijlpark · Vaal Triangle · Gauteng</p>
+      <h1 class="hero__title">
+        <span class="t-lg">CAKES</span>
+        <span class="t-mid"><em>for&nbsp;your</em></span>
+        <span class="t-lg">WEDDING</span>
+      </h1>
+
+      <a href="#gallery" class="hero__pill">More cakes <span aria-hidden="true">&rarr;</span></a>
+
+      <div class="hero__lower">
+        <div class="hero__cards">
+          <a href="#gallery" class="mcard">
+            <img src="assets/img/g26.jpg" alt="Croquembouche tower" />
+            <div><strong>Croquembouche</strong><span>Dessert tower</span></div>
+          </a>
+          <a href="#gallery" class="mcard">
+            <img src="assets/img/g39.jpg" alt="Vintage heart cake" />
+            <div><strong>Vintage Heart</strong><span>Trending style</span></div>
+          </a>
+        </div>
+        <ul class="hero__stats">
+          <li><strong>One&#8209;of&#8209;a&#8209;kind</strong><span>bespoke designs</span></li>
+          <li><strong>Fresh florals</strong><span>&amp; fine detail</span></li>
+          <li><strong>Vaal &amp; Gauteng</strong><span>delivery area</span></li>
+        </ul>
       </div>
-      <div class="hero__badge"><span class="display">Sinden's</span><small>est. with love</small></div>
     </div>
   </div>
   <a href="#story" class="hero__scroll" aria-label="Scroll to story">&#8964;</a>
